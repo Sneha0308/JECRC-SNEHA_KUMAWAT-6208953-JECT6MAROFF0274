@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-28T13:17:46.009266" rpa="false" schemaversion="5">
+<suite id="s1" name="Screenshot" source="C:\Users\HP5CD\PycharmProjects\28.03.26\screenshot.robot">
+<test id="s1-t1" name="Screenshots" line="9">
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>C:\\Users\\HP5CD\\PycharmProjects\\28.03.26/../Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-03-28T13:17:46.289040" elapsed="0.000581"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:17:46.290268" level="INFO">Opening browser 'chrome' to base url 'https://in.bookmyshow.com/explore/home/jaipur'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-28T13:17:46.290008" elapsed="5.283605"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-28T13:17:51.577393" elapsed="0.112148"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T13:17:53.691945" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T13:17:51.690181" elapsed="2.001982"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:17:55.131504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Screenshots/fullpage.png"&gt;&lt;img src="../../Screenshots/fullpage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>fullpage.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-28T13:17:53.692785" elapsed="1.469491"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T13:17:57.321611" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T13:17:55.203778" elapsed="2.118120"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:17:57.678190" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../Screenshots/selenium-screenshot-1.png"&gt;&lt;img src="../../Screenshots/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-28T13:17:57.678518" level="FAIL">Element with locator 'xpath=//img[@alt="The Super Mario Galaxy Movie"]' not found.</msg>
+<arg>xpath=//img[@alt="The Super Mario Galaxy Movie"]</arg>
+<arg>Mario.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="FAIL" start="2026-03-28T13:17:57.348736" elapsed="0.336406">Element with locator 'xpath=//img[@alt="The Super Mario Galaxy Movie"]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-28T13:17:57.685771" elapsed="0.000062"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-28T13:17:57.686256" elapsed="0.000034"/>
+</kw>
+<status status="FAIL" start="2026-03-28T13:17:46.287772" elapsed="11.399214">Element with locator 'xpath=//img[@alt="The Super Mario Galaxy Movie"]' not found.</status>
+</test>
+<status status="FAIL" start="2026-03-28T13:17:46.011817" elapsed="11.676368"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Screenshot" id="s1" pass="0" fail="1" skip="0">Screenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
